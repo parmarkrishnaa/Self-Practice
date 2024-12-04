@@ -1,0 +1,12 @@
+.h1{
+    color: black;
+    margin: 10px;
+    margin-left: 10px;
+}
+.h2{
+    color: black;
+}
+.h3{
+    width: 40px;
+    text-align: center;
+}
