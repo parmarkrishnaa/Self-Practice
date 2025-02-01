@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+img{
+    position: absolute;
+    width: 100px;
+    top: 25px;
+    left: 115px;
+}
+
+.article{
+    width: 10px;
+}
+
+.article img{
+    width: 35px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    left: 540px;
+}
+
+.article p{
+    position: absolute;
+    top: 45px;
+    left: 530px;
+}
+
+.people{
+    width: 10px;
+}
+
+.people img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 650px;
+}
+
+.people p{
+    position: absolute;
+    top: 45px;
+    left: 643px;
+}
+
+.learning{
+    width: 10px;
+}
+
+.learning img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 750px;
+}
+
+.learning p{
+    position: absolute;
+    top: 45px;
+    left: 735px;
+}
+
+.job{
+    width: 10px;
+}
+
+.job img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 850px;
+}
+
+.job p{
+    position: absolute;
+    top: 45px;
+    left: 847px;
+}
+
+.games{
+    width: 10px;
+}
+
+.games img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 950px;
+}
+
+.games p{
+    position: absolute;
+    top: 45px;
+    left: 937px;
+}
+
+.line{
+    width: 10px;
+}
+
+.line img{
+    width: 10px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 1030px;
+}
+
+.laptop{
+    width: 10px;
+}
+
+.laptop img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 1080px;
+}
+
+.laptop p{
+    width: 90px;
+    position: absolute;
+    top: 45px;
+    right: 370px;
+}
+
+.line2{
+    width: 10px;
+}
+
+.line2 img{
+    width: 10px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 1160px;
+}
+
+.join{
+    position: absolute;
+    right: 270px;
+    font-weight: bold;
+    color: darkgray;
+}
+
+button{
+    width: 110px;
+    height: 50px;
+    border: 1px solid blue;
+    border-radius: 50px;
+    color: blue;
+    font-weight: bold;
+    font-size: large;
+    position: absolute;
+    right: 140px;
+    top: 13px;
+}
+
+.welcome{
+    width: 600px;
+    position: relative;
+    top: 150px;
+    left: 115px;
+    font-size: xx-large;
+}
