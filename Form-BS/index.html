@@ -23,40 +23,43 @@
                 <div class="border border-3 rounded-5 mt-3 mb-3 p-3">
                     <h2 class="text-center mt-3">Survey Form</h2>
                     <hr>
-                    <form action="./final.html" method="get" class="mt-4">
+                    <form action="https://sheetdb.io/api/v1/1x0bhumjka9ne" method="post" class="mt-4">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatinglabel" placeholder="firstname" required>
+                            <input type="text" class="form-control" id="floatinglabel" name="data[First Name]" placeholder="firstname" required>
                             <label for="floatinglabel">First Name</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatinglabel" placeholder="lastname" required>
+                            <input type="text" class="form-control" id="floatinglabel" name="data[Last Name]" placeholder="lastname" required>
                             <label for="floatinglabel">Last Name</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatinglabel" placeholder="fathername"
+                            <input type="text" class="form-control" id="floatinglabel" name="data[Father's Name]" placeholder="fathername"
                                 required>
                             <label for="floatinglabel">Father's Name</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatinglabel" placeholder="fathername"
+                            <input type="text" class="form-control" id="floatinglabel" name="data[Mother's Name]" placeholder="mothername"
                                 required>
                             <label for="floatinglabel">Mother's Name</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="tel" class="form-control" id="floatinglabel" placeholder="number" required>
+                            <input type="tel" class="form-control" id="floatinglabel" name="data[Phone Number]" placeholder="number" required>
                             <label for="floatinglabel">Phone Number</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatinglabel" placeholder="email" required>
+                            <input type="email" class="form-control" id="floatinglabel" name="data[Email]" placeholder="email" required>
                             <label for="floatinglabel">Email</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatinglabel" placeholder="school" required>
+                            <input type="date" class="form-control" id="floatinglabel" name="data[DOB]" placeholder="dob" required>
+                            <label for="floatinglabel">DOB</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatinglabel" name="data[School]" placeholder="school" required>
                             <label for="floatinglabel">School</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example"
-                                required>
+                            <select class="form-select" id="floatingSelect" name="data[Class]" required>
                                 <option selected disabled>Country</option>
                                 <option value="1">Russia</option>
                                 <option value="2">China</option>
@@ -67,8 +70,7 @@
                             <label for="floatingSelect">Country</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example"
-                                required>
+                            <select class="form-select" id="floatingSelect" name="data[City]" required>
                                 <option selected disabled>City</option>
                                 <option value="1">St. Petersburg</option>
                                 <option value="2">Novosibirsk</option>
@@ -79,6 +81,7 @@
                                 <option value="7">Mumbai</option>
                                 <option value="8">Delhi</option>
                                 <option value="9">Ahmedabad</option>
+                                <option value="9">Gujarat</option>
                                 <option value="10">Almaty</option>
                                 <option value="11">Astana</option>
                                 <option value="12">Shymkent</option>
@@ -89,12 +92,12 @@
                             <label for="floatingSelect">City</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="data[Address]"
                                 required></textarea>
                             <label for="floatingTextarea">Address</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="pincode" class="form-control" id="floatinglabel" placeholder="pincode"
+                            <input type="pincode" class="form-control" id="floatinglabel" placeholder="pincode" name="data[Pincode]"
                                 required>
                             <label for="floatinglabel">Pincode</label>
                         </div>
