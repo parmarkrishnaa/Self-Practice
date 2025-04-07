@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheets Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input,
+        textarea,
+        button {
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Submit Your Info</h2>
+    <form id="my-form">
+        <input type="text" name="name" placeholder="Your name" required><br>
+        <input type="email" name="email" placeholder="Your email" required><br>
+        <textarea name="message" placeholder="Your message" required></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+
+    <script>
+        const form = document.getElementById('my-form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const formData = {
+                name: form.name.value,
+                email: form.email.value,
+                message: form.message.value
+            };
+
+            fetch('https://script.google.com/macros/s/AKfycbxJprbmPjCo546gTW0fuJNEqkDY6EAaHvAEMYqHVeGuAxSaa4hwHBFtN5HM2npPF0np/exec', {
+                method: 'POST',
+                body: JSON.stringify(formData),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log("Success:", data);
+                    alert("Form submitted successfully!");
+                    form.reset();
+                })
+                .catch(error => {
+                    console.error("Submission error:", error);
+                    alert("Error submitting form");
+                });
+
+        });
+    </script>
+</body>
+
+</html>

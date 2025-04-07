@@ -23,43 +23,49 @@
                 <div class="border border-3 rounded-5 mt-3 mb-3 p-3">
                     <h2 class="text-center mt-3">Survey Form</h2>
                     <hr>
-                    <form action="https://sheetdb.io/api/v1/1x0bhumjka9ne" method="post" class="mt-4">
+                    <form id="surveyForm" action="https://sheetdb.io/api/v1/vq1orjr52211x" method="post" class="mt-4">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatinglabel" name="data[First Name]" placeholder="firstname" required>
+                            <input type="text" class="form-control" id="firstname" name="firstName"
+                                placeholder="firstname" required>
                             <label for="floatinglabel">First Name</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatinglabel" name="data[Last Name]" placeholder="lastname" required>
+                            <input type="text" class="form-control" id="floatinglabel" name="lastName"
+                                placeholder="lastname" required>
                             <label for="floatinglabel">Last Name</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatinglabel" name="data[Father's Name]" placeholder="fathername"
-                                required>
+                            <input type="text" class="form-control" id="floatinglabel" name="fatherName"
+                                placeholder="fathername" required>
                             <label for="floatinglabel">Father's Name</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatinglabel" name="data[Mother's Name]" placeholder="mothername"
-                                required>
+                            <input type="text" class="form-control" id="floatinglabel" name="motherName"
+                                placeholder="mothername" required>
                             <label for="floatinglabel">Mother's Name</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="tel" class="form-control" id="floatinglabel" name="data[Phone Number]" placeholder="number" required>
+                            <input type="tel" class="form-control" id="floatinglabel" name="phoneNumber"
+                                placeholder="number" required>
                             <label for="floatinglabel">Phone Number</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatinglabel" name="data[Email]" placeholder="email" required>
+                            <input type="email" class="form-control" id="floatinglabel" name="email"
+                                placeholder="email" required>
                             <label for="floatinglabel">Email</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="date" class="form-control" id="floatinglabel" name="data[DOB]" placeholder="dob" required>
+                            <input type="date" class="form-control" id="floatinglabel" name="dob"
+                                placeholder="dob" required>
                             <label for="floatinglabel">DOB</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatinglabel" name="data[School]" placeholder="school" required>
+                            <input type="text" class="form-control" id="floatinglabel" name="school"
+                                placeholder="school" required>
                             <label for="floatinglabel">School</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="floatingSelect" name="data[Class]" required>
+                            <select class="form-select" id="floatingSelect" name="country" required>
                                 <option selected disabled>Country</option>
                                 <option value="1">Russia</option>
                                 <option value="2">China</option>
@@ -70,7 +76,7 @@
                             <label for="floatingSelect">Country</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="floatingSelect" name="data[City]" required>
+                            <select class="form-select" id="floatingSelect" name="city" required>
                                 <option selected disabled>City</option>
                                 <option value="1">St. Petersburg</option>
                                 <option value="2">Novosibirsk</option>
@@ -92,18 +98,20 @@
                             <label for="floatingSelect">City</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="data[Address]"
-                                required></textarea>
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                                name="address" required></textarea>
                             <label for="floatingTextarea">Address</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="pincode" class="form-control" id="floatinglabel" placeholder="pincode" name="data[Pincode]"
-                                required>
+                            <input type="pincode" class="form-control" id="floatinglabel" placeholder="pincode"
+                                name="pincode" required>
                             <label for="floatinglabel">Pincode</label>
                         </div>
                         <div class="d-flex justify-content-end mb-3">
-                            <button class="btn btn-secondary me-2" type="reset">Reset</button>
-                            <button class="btn btn-primary" type="submit">Submit</button>
+                            <button type="reset" class="btn btn-secondary me-4">Reset</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                Submit
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -112,7 +120,37 @@
     </div>
     </div>
 
+    <!-- <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
     <script src="./js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script>
+        let url='https://script.google.com/macros/s/AKfycbwTp4CTJNZa_DkoYBVZGUGoY_AkTQ8cpd5dDsBYD354Qn8pPfFgblUGdt9X8qW2e4Kc/exec';
+        let form = document.getElementById('surveyForm');
+        form.addEventListener("submit", (e) => {
+            let d = new FormData(form);
+            fetch(url,{
+                method: 'POST',
+                body: d
+            }).then((res) => res.text())
+            .then((finalRes) => console.log(finalRes))
+            e.preventDefault();
+        })
+    </script>
 </body>
 
 </html>

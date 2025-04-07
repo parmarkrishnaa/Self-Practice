@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header section start */
+
+header{
+    background-color: #73746c;
+}
+
+header nav{
+    background-color: #73746cc0;
+}
+
+header nav .text a, .icon a i {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav .text a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* header section end */
+
+/* main section start */
+
+/* banner section start */
+
+.banner{
+    background-color: #73746c;
+    position: relative;
+}
+
+.banner .content p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 0;
+    margin-top: 20%;
+}
+
+.banner .content h4{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-top: 5%;
+}
+
+.banner .content h3{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-top: 5%;
+}
+
+/* banner section end */
+
+/* seller section start */
+
+.seller .title p{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.seller .shirt img{
+    transition: 0.5s;
+}
+
+.seller .shirt img:hover{
+    transform: scale(1.1);
+}
+
+.seller .shirt p{
+    top: 4%;
+    right: -40px;
+    transform: rotate(45deg);
+    padding: 5px 48px;
+}
+
+/* seller section end */
+
+/* about section start */
+
+.about .img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* about section end */
+
+/* category section start */
+
+.category .shirt img{
+    transition: 0.5s;
+}
+
+.category .shirt img:hover{
+    transform: scale(1.1);
+}
+
+/* category section end */
+
+/* main section end */
