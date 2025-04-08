@@ -109,4 +109,51 @@ header nav .text a:hover {
 
 /* category section end */
 
+/* collection section start */
+
+.collection .shirt img{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.collection .shirt img:hover{
+    transform: scale(1.1);
+}
+
+.collection .shirt p{
+    top: 50px;
+    right: -90px;
+    transform: rotate(45deg);
+    padding: 6px 120px;
+}
+
+/* collection section end */
+
+/* product section start */
+
+.product .shirt img{
+    transition: 0.5s;
+}
+
+.product .shirt img:hover{
+    transform: scale(1.1);
+}
+
+.product .shirt p{
+    top: 4%;
+    right: -40px;
+    transform: rotate(45deg);
+    padding: 5px 48px;
+}
+
+/* product section end */
+
+/* icons section start */
+
+.icon .ship i{
+    width: 250px;
+}
+
+/* icons section end */
+
 /* main section end */
