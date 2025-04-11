@@ -8,11 +8,18 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* header section start */
-
-header{
-    background-color: #73746c;
+.about .content button, .collection .shirt button, .store .card button{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
 }
+
+.about .content button:hover, .collection .shirt button:hover, .store .card button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* header section start */
 
 header nav{
     background-color: #73746cc0;
@@ -156,4 +163,29 @@ header nav .text a:hover {
 
 /* icons section end */
 
+/* article section start */
+
+.article .shirt img{
+    transition: 0.5s;
+}
+
+.article .shirt img:hover{
+    transform: scale(1.1);
+}
+
+/* article section end */
+
 /* main section end */
+
+/* footer section start */
+
+footer .off .icons i{
+    transition: 0.7s;
+}
+
+footer .off .icons i:hover{
+    color: black;
+    transform: scale(1.1);
+}
+
+/* footer section end */
