@@ -1,20 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.about .content button, .collection .shirt button, .store .card button{
+.about .content button, .collection .shirt button, .store .card button, .product button{
     background-color: white;
     color: black;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
-.about .content button:hover, .collection .shirt button:hover, .store .card button:hover{
+.about .content button:hover, .collection .shirt button:hover, .store .card button:hover, .product button:hover{
     background-color: black;
     color: white;
 }
@@ -179,13 +177,34 @@ header nav .text a:hover {
 
 /* footer section start */
 
+footer .page a, .res a, .uti a{
+    color: #73746c;
+    transition: 0.7s;
+}
+
+footer .page a:hover, .res a:hover, .uti a:hover{
+    color: black;
+}
+
+footer .off span{
+    background-color: black;
+    color: white;
+    transition: 0.6s;
+}
+
+footer .off span:hover{
+    background-color: #73746c;
+    color: rgba(255, 255, 255, 0.815);
+}
+
 footer .off .icons i{
+    font-size: 16px;
     transition: 0.7s;
 }
 
 footer .off .icons i:hover{
     color: black;
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 
 /* footer section end */

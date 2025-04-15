@@ -1,0 +1,114 @@
+@media(min-width: 576px){
+    .seller .shirt p{
+        top: 8%;
+        right: -100px;
+        transform: rotate(45deg);
+        padding: 5px 5px 5px 64px;
+    }
+
+    .collection .shirt p{
+        top: 8%;
+        right: -100px;
+        transform: rotate(45deg);
+        padding: 5px 5px 5px 75px;
+    }
+
+    .product .shirt p{
+        top: 8%;
+        right: -100px;
+        transform: rotate(45deg);
+        padding: 5px 5px 5px 65px;
+    }
+}
+
+@media(min-width: 768px){
+    .seller .shirt p{
+        top: 6%;
+        right: -50px;
+        transform: rotate(45deg);
+        padding: 5px 5px 5px 45px;
+    }
+
+    .collection .shirt p{
+        top: 2%;
+        right: -100px;
+        transform: rotate(45deg);
+        padding: 5px 5px 5px 175px;
+    }
+
+    .product .shirt p{
+        top: 2%;
+        right: -100px;
+        transform: rotate(45deg);
+        padding: 5px 5px 5px 170px;
+    }
+}
+
+@media(min-width: 992px){
+    .seller .shirt p{
+        top: 5%;
+        right: -35px;
+        transform: rotate(45deg);
+        padding: 5px 5px 5px 40px;
+    }
+    
+    .collection .shirt p{
+        top: 2%;
+        right: -60px;
+        transform: rotate(45deg);
+        padding: 5px 5px 5px 105px;
+    }
+    
+    .product .shirt p{
+        top: 3%;
+        right: -35px;
+        transform: rotate(45deg);
+        padding: 5px 30px 5px 50px;
+    }
+}
+
+@media(min-width: 1200px){
+    .seller .shirt p{
+        top: 4%;
+        right: -30px;
+        transform: rotate(45deg);
+        padding: 5px 20px 5px 35px;
+    }
+    
+    .collection .shirt p{
+        top: 2%;
+        right: -100px;
+        transform: rotate(45deg);
+        padding: 5px 5px 5px 120px;
+    }
+    
+    .product .shirt p{
+        top: 3%;
+        right: -30px;
+        transform: rotate(45deg);
+        padding: 5px 25px 5px 40px;
+    }
+}
+
+@media(min-width: 1400px){
+    .seller .shirt p{
+        top: 4%;
+        right: -35px;
+        transform: rotate(45deg);
+        padding: 5px 20px 5px 55px;
+    }
+    
+    .collection .shirt p{
+        top: 2%;
+        right: -100px;
+        transform: rotate(45deg);
+        padding: 5px 5px 5px 160px;
+    }
+    
+    .product .shirt p{
+        top: 3%;
+        right: -40px;
+        transform: rotate(45deg);
+        padding: 5px 5px 5px 50px;
+    }
+}
