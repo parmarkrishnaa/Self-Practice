@@ -23,7 +23,7 @@
                 <div class="border border-3 rounded-5 mt-3 mb-3 p-3">
                     <h2 class="text-center mt-3">Survey Form</h2>
                     <hr>
-                    <form id="surveyForm" action="https://sheetdb.io/api/v1/vq1orjr52211x" method="post" class="mt-4">
+                    <form method="post" autocomplete="off" class="mt-4" name="google-sheet">
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="firstname" name="firstName"
                                 placeholder="firstname" required>
@@ -85,7 +85,7 @@
                                 <option value="5">Shanghai</option>
                                 <option value="6">Beijing</option>
                                 <option value="7">Mumbai</option>
-                                <option value="8">Delhi</option>
+                                <option value="8">Navsari</option>
                                 <option value="9">Ahmedabad</option>
                                 <option value="9">Gujarat</option>
                                 <option value="10">Almaty</option>
@@ -109,33 +109,13 @@
                         </div>
                         <div class="d-flex justify-content-end mb-3">
                             <button type="reset" class="btn btn-secondary me-4">Reset</button>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                                Submit
-                            </button>
+                            <button type="button" name="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-
-    <!-- <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <script src="./js/bootstrap.bundle.min.js" type="text/javascript"></script>
     <script>

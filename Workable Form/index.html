@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form autocomplete="off" method="post" name="google-sheet">
+            <h3>
+                <center>Contact Form</center>
+            </h3>
+            <input type="text" name="Name" placeholder="Type Your Name Here" required>
+            <input type="email" name="Email" placeholder="Type Your Email Here" required>
+            <input type="text" name="Number" placeholder="Type Your Number Here" required>
+
+            <select name="Degree">
+                <option value="Not selected">Select an option</option>
+                <option value="BCA">BCA</option>
+                <option value="BSC IT">BSC IT</option>
+                <option value="BTech Cs">BTech Cs</option>
+                <option value="BSC CS">BSC CS</option>
+            </select>
+
+            <textarea rows="4" placeholder="How can we help you?" name="Message"></textarea>
+
+            <button type="submit" name="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyTDPy37AwnbViMGJdG3k4ElTBl0zXSXHK3ASHdCVqfZu4flda51UHqzFvMGYfIVxCQ/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
