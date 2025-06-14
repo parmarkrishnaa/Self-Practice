@@ -4,21 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>From</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./image.png" type="image/x-icon">
 </head>
 
 <body>
     <div class="container">
         <form autocomplete="off" method="post" name="google-sheet">
-            <h3>
-                <center>Contact Form</center>
-            </h3>
-            <input type="text" name="Name" placeholder="Type Your Name Here" required>
-            <input type="email" name="Email" placeholder="Type Your Email Here" required>
-            <input type="text" name="Number" placeholder="Type Your Number Here" required>
+            <h3>Survey Form</h3>
+            <label for="name">First Name: <span>*</span> </label>
+            <input type="text" name="First_Name" placeholder="Type Here...." required>
+            <label for="name">Last Name: <span>*</span> </label>
+            <input type="text" name="Last_Name" placeholder="Type Here...." required>
+            <label for="name">Father's Name: <span>*</span> </label>
+            <input type="text" name="Fathers_Name" placeholder="Type Here...." required>
+            <label for="name">Mother's Name: <span>*</span> </label>
+            <input type="text" name="Mothers_Name" placeholder="Type Here...." required>
+            <label for="phone">Phone Number: <span>*</span> </label>
+            <input type="text" name="Phone_Number" placeholder="Type Here...." required>
+            <label for="email">Email: <span>*</span> </label>
+            <input type="email" name="Email" placeholder="Type Here...." required>
+            <label for="dob">Date Of Birth: <span>*</span> </label>
+            <input type="date" name="Date_Of_Birth" value="" placeholder="Type Here...." required>
+            <label for="school">School: <span>*</span> </label>
+            <input type="text" name="School" placeholder="Type Here...." required>
 
-            <select name="Degree">
+            <label for="">Degree: <span>*</span> </label>
+            <select name="Degree" required>
                 <option value="Not selected">Select an option</option>
                 <option value="BCA">BCA</option>
                 <option value="BSC IT">BSC IT</option>
@@ -26,10 +39,16 @@
                 <option value="BSC CS">BSC CS</option>
             </select>
 
-            <textarea rows="4" placeholder="How can we help you?" name="Message"></textarea>
+            <label for="address">Address: <span>*</span> </label>
+            <textarea rows="4" placeholder="Type Here...." name="Address" required></textarea>
 
-            <button type="submit" name="submit">Submit</button>
-            <button type="reset">Reset</button>
+            <label for="pincode">Pincode: <span>*</span> </label>
+            <input type="text" name="Pincode" placeholder="Type Here...." required>
+
+            <div class="btn">
+                <button class="reset" type="reset">Reset</button>
+                <button class="submit" type="submit" name="submit">Submit</button>
+            </div>
         </form>
     </div>
 
