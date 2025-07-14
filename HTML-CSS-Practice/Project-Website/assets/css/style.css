@@ -1,0 +1,606 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #eaf0ff;
+    --tertiary-color: #f2745f;
+    --footer-color: #363e50;
+    --dark-color: #a9a4abc7;
+    --White-color: #fff;
+    --text-black: #000;
+    --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-22: 22px;
+    --fs-24: 24px;
+    --fs-44: 44px;
+    --fs-64: 64px;
+    --fw-100: 100;
+    --fw-200: 200;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+    --fw-900: 900;
+}
+
+body {
+    font-size: var(--fs-16);
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.container-fluid {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+header {
+    background-color: var(--secondary-color);
+    width: 100%;
+    min-height: 33vh;
+}
+
+header .title {
+    text-align: center;
+}
+
+header .logo a {
+    width: 100%;
+    font-size: 42px;
+    border-bottom: 1px solid black;
+    display: block;
+    padding: 40px 0;
+}
+
+header .title nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+header .title nav ul li a {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 40px;
+    font-size: 12px;
+}
+
+/* main section start */
+
+/* banner section start */
+
+main .banner {
+    background-image: url(../images/banner-bg.jpg);
+    padding: 170px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+.banner .banner-content {
+    color: var(--primary-color);
+}
+
+.banner .banner-content h3 {
+    font-size: 16px;
+}
+
+.banner .banner-content h1 {
+    font-size: 45px;
+}
+
+.banner .banner-content button {
+    background-color: var(--tertiary-color);
+    padding: 16px 14px;
+    font-size: 10px;
+    font-weight: var(--fw-600);
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* banner section end */
+
+/* cook section start */
+
+.cook {
+    padding: 40px 0;
+}
+
+.cook .cook-content .img1 img,
+.cook .cook-content .img2 img {
+    width: 310px;
+}
+
+.cook .cook-content .box {
+    background-color: var(--tertiary-color);
+    padding: 40px;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: var(--fs-18);
+
+}
+
+.cook .cook-content .box .call {
+    background-color: #e96149;
+    margin: 14px 0;
+    padding: 10px;
+}
+
+.cook .cook-content .box .call p {
+    font-size: 10px;
+}
+
+.cook .cook-content .box .call span {
+    font-size: 22px;
+    font-weight: var(--fw-500);
+}
+
+.cook .cook-content .box .or {
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 7px 6px;
+    display: inline;
+    font-size: 12px;
+
+}
+
+.cook .cook-content button {
+    background-color: var(--primary-color);
+    padding: 16px 14px;
+    font-size: 10px;
+    font-weight: var(--fw-600);
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    color: var(--tertiary-color);
+}
+
+/* cook section end */
+
+/* dish section start */
+
+.dish {
+    margin-top: 20px;
+    padding: 60px 0;
+}
+
+.dish .dish-content img {
+    background-color: #a9a4ab59;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.dish .dish-content p {
+    font-size: 20px;
+}
+
+/* dish section end */
+
+/* book section start */
+
+.book {
+    background-image: url(../images/book-bg.jpg);
+    padding: 50px 5px 90px 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.book .book-content h3 {
+    font-size: 26px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.book .book-content .book-form .book-form-res {
+    background-color: white;
+    padding: 10px;
+}
+
+.book .book-content .book-form .book-form-res h2 {
+    margin-bottom: 20px;
+}
+
+.book .book-content .book-form .book-form-res .day-hour select {
+    width: 180px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+.book .book-content .book-form .book-form-res .name-number input {
+    width: 180px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.book .book-content .book-form .book-form-res .person-button select {
+    width: 180px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.book .book-content .book-form .book-form-res .person-button button {
+    background-color: var(--tertiary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 20px 50px;
+}
+
+/* book section end */
+
+/* get-app section start */
+
+.get-app {
+    background-color: var(--tertiary-color);
+    padding: 60px;
+    margin-bottom: 6%;
+}
+
+.get-app h2 {
+    color: white;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.get-app button {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    padding: 10px 18px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* get-app section end */
+
+/* food section start */
+
+.food {
+    margin-bottom: 90px;
+}
+
+.food .title {
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.food .card {
+    background-color: var(--secondary-color);
+    display: inline-block;
+    padding: 20px;
+    margin-right: 30px;
+}
+
+.food .card h3 {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.301);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.food .card .img {
+    position: relative;
+}
+
+.food .card .img span {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+.food .card .inner-card {
+    background-color: var(--primary-color);
+    padding: 10px 10px 10px 20px;
+}
+
+.food .card .inner-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.food .card .inner-card span {
+    font-size: 12px;
+    line-height: 1px;
+    color: var(--dark-color);
+}
+
+/* food section end */
+
+/* blog section start */
+
+.blog {
+    background-color: var(--secondary-color);
+    padding: 60px;
+}
+
+.blog .title {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.blog .card {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.blog .card .img {
+    position: relative;
+}
+
+.blog .card .img span {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.801);
+    color: var(--tertiary-color);
+    font-weight: bold;
+}
+
+.blog .card .inner-card {
+    background-color: var(--primary-color);
+    padding: 20px 15px;
+}
+
+.blog .card .inner-card h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.blog .card .inner-card .knaus {
+    font-size: 20.7px;
+}
+
+.blog .card .inner-card .coat {
+    font-size: 25.1px;
+}
+
+.blog .card .inner-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.blog .card .inner-card span {
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--dark-color);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.blog .card .inner-card a {
+    color: var(--tertiary-color);
+}
+
+/* blog section end */
+
+/* sign-up section start */
+
+.sign-up {
+    background-image: url(../images/signup-bg.jpg);
+    padding: 70px 5px 90px 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sign-up .title h3 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.sign-up .input input {
+    background-color: #fafafae6;
+    width: 29%;
+    padding: 14px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 30px
+}
+
+.sign-up .input input::placeholder {
+    color: rgb(87, 86, 86);
+}
+
+.sign-up .input button {
+    background: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 14px 20px;
+    color: white;
+}
+
+/* sign-up section end */
+
+footer {
+    background-color: #363e50;
+    color: var(--primary-color);
+    padding: 45px 160px;
+    font-size: 12px;
+}
+
+footer .icons i {
+    background-color: var(--primary-color);
+    color: #363e50;
+    font-size: 14px;
+    margin-right: 15px;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+footer .icons i:first-child {
+    font-size: 14px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+footer .icons i:nth-child(3) {
+    font-size: 14px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+}
+
+footer .icons i:nth-child(4) {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+}
+
+footer .icons i {
+    transition: 0.7s;
+}
+
+footer .icons i:hover {
+    background-color: var(--tertiary-color);
+}
+
+/* main section end */
